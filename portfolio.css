@@ -1,3 +1,7 @@
+* {
+    margin : 0;
+}
+
 /*-----------------------------------*/
 .nav {
     position : fixed;
@@ -100,3 +104,17 @@
 }
 
 /*--------------------------------------*/
+
+.scroll-box {
+    height : 5000px;
+}
+
+/*---------------------------------------*/
+
+.title {
+    position : fixed;
+    width : 100%;
+    
+    text-align : center;
+    background-color : orange;
+}
