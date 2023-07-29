@@ -4,29 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
     <title>ポートフォリオサイト</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"></script>
 </head>
 <body>
     <header class="header">
-        <h1 class="title">Portfolio</h1>
+        <div id="header-container">
+            <div class="title-container">
+                <h1 class="title">UMEMURA PORTFOLIO</h1>
+            </div>
+            <nav class="nav-wide">
+                <ul>
+                    <li class="nav-wide-item"><a href="#hero">ABOUT</a></li>
+                    <li class="nav-wide-item"><a href="#scroll-works">WORKS</a></li>
+                    <li class="nav-wide-item"><a href="#scroll-profile">PROFILE</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="nav">
             <input id="drawer_input" class="drawer_hidden" type="checkbox">
             <label for="drawer_input" class="drawer_open"><span></span></label>
-
             <nav class="nav_content">
                 <li class="nav_item">
-                    <a href="#">About</a>
+                    <a href="#hero" onclick="closeDrawer()">ABOUT</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#">Profile</a>
+                    <a href="#scroll-works" onclick="closeDrawer()">WORKS</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#">Portfolio</a>
+                    <a href="#scroll-profile" onclick="closeDrawer()">PROFILE</a>
                 </li>
             </nav>
         </div>
     </header>
-    <div class="scroll-box"><br><br><br><br><br><br><br><br><br>スクロール用確認用</div>
+    <div id="hero">
+        <div class="hero-text">
+            <h1>UMEMURA AKITO</h1>
+            <p>PORTFOLIO</p>
+            <h2>制作実績</h2>
+        </div>
+        <div id="scroll-works"></div>
+    </div>
+    <div id="works">
+        <h1>WORKS</h1>
+        <div class="works-container">
+            <div class="items-container">
+                <div id="beer-box"><img id="beer-image" class="works-image" src="image/beer.jpeg" alt=""></div>
+                <p id="works-text-top">この作品についての説明が入ります<br>書くことないかも</p>
+            </div>
+            <div id="form-container" class="items-container">
+                <p class="works-text">この作品についての説明が入ります<br>書くことないかも</p>
+                <img id="form-image" class="works-image" src="image/form.png" alt="">
+            </div>
+            <div class="items-container">
+                <div id="video-container-body">
+                    <div class="video-container">
+                        <img id="light-image" src="image/gallery4.jpeg" alt="動画のサムネイル" class="thumbnail" data-video="image/movie1.mov">
+                    </div>
+                    <div id="video-modal" class="modal">
+                        <span class="close">&times;</span>
+                        <video id="video-player">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <p class="works-text">この作品について</p>
+            </div>
+            <div id="video4" class="items-container">
+                <p class="works-text">この作品について</p>
+                <div id="video-container-body2">
+                    <div class="video-container">
+                        <img id="robot-image" src="image/gallery3.jpeg" alt="動画のサムネイル" class="thumbnail2" data-video="image/movie2.mov">
+                    </div>
+                    <div id="video-modal2" class="modal">
+                        <span class="close">&times;</span>
+                        <video id="video-player2">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="scroll-profile"></div>
+    </div>
+    <div id="profile">
+        <h1>PROFILE</h1>
+        <p>ここには自分のプロフィールを入れます<br>書くこと候補<br>名前、所属大学、</p>
+    </div>
+    <div class="scroll-top">
+        
+    </div>
+    <footer>
+        <p>©UMEMURA PORTFOLIO</p>
+    </footer>
 </body>
 </html>
