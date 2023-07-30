@@ -1,10 +1,8 @@
 /*--------------ハンバーガーメニュー-------------*/
 
 function closeDrawer() {
-  //チェックボックス要素の取得
   var drawerCheckbox = document.getElementById("drawer_input");
   
-  //チェックボックスをオフにしてメニューを閉じる
   if (drawerCheckbox.checked) {
       drawerCheckbox.checked = false;
   }
@@ -27,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       videoPlayer.play();
       videoModal.style.display = "block";
       setTimeout(function (){
-        videoModal.style.opacity = 1;  //モーダルをふわっと表示させる
+        videoModal.style.opacity = 1;
       }, 50);
     });
   });
@@ -35,19 +33,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close");
   closeBtn.addEventListener("click", function () {
     videoPlayer.pause();
-    videoModal.style.opacity = 0;  //モーダルをふわっと表示させる
+    videoModal.style.opacity = 0;
     setTimeout(function (){
       videoModal.style.display = "none";
-    }, 300);  //300ミリ秒後にモーダルを非表示にする(トランジション時間に合わせる)
+    }, 300);
   });
 
   videoModal.addEventListener("click", function (event) {
     if (event.target === videoModal) {
       videoPlayer.pause();
-      videoModal.style.opacity = 0;  //モーダルをふわっと非表示にする
+      videoModal.style.opacity = 0;
       setTimeout(function (){
         videoModal.style.display = "none";
-      }, 300);  //300ミリ秒後にモーダルを非表示にする(トランジション時間に合わせる)
+      }, 300);
      }
   });
 });
@@ -66,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
       videoPlayer.play();
       videoModal.style.display = "block";
       setTimeout(function (){
-        videoModal.style.opacity = 1;  //モーダルをふわっと表示させる
+        videoModal.style.opacity = 1;
       }, 50);
     });
   });
@@ -74,19 +72,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close");
   closeBtn.addEventListener("click", function () {
     videoPlayer.pause();
-    videoModal.style.opacity = 0;  //モーダルをふわっと表示させる
+    videoModal.style.opacity = 0;
     setTimeout(function (){
       videoModal.style.display = "none";
-    }, 300);  //300ミリ秒後にモーダルを非表示にする(トランジション時間に合わせる)
+    }, 300);
   });
 
   videoModal.addEventListener("click", function (event) {
     if (event.target === videoModal) {
       videoPlayer.pause();
-      videoModal.style.opacity = 0;  //モーダルをふわっと非表示にする
+      videoModal.style.opacity = 0;
       setTimeout(function (){
         videoModal.style.display = "none";
-      }, 300);  //300ミリ秒後にモーダルを非表示にする(トランジション時間に合わせる)
+      }, 300);
      }
   });
 });
+
+/*------------------------------------------------*/

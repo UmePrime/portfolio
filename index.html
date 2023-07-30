@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
-    <title>ポートフォリオサイト</title>
+    <title>PORTFOLIO</title>
     <link rel="stylesheet" href="portfolio.css">
     <script src="portfolio.js"></script>
 </head>
@@ -13,11 +13,11 @@
     <header class="header">
         <div id="header-container">
             <div class="title-container">
-                <h1 class="title">UMEMURA PORTFOLIO</h1>
+                <h1 class="title">PORTFOLIO</h1>
             </div>
             <nav class="nav-wide">
                 <ul>
-                    <li class="nav-wide-item"><a href="#hero">ABOUT</a></li>
+                    <li class="nav-wide-item"><a href="#hero">TOP</a></li>
                     <li class="nav-wide-item"><a href="#scroll-works">WORKS</a></li>
                     <li class="nav-wide-item"><a href="#scroll-profile">PROFILE</a></li>
                 </ul>
@@ -28,7 +28,7 @@
             <label for="drawer_input" class="drawer_open"><span></span></label>
             <nav class="nav_content">
                 <li class="nav_item">
-                    <a href="#hero" onclick="closeDrawer()">ABOUT</a>
+                    <a href="#hero" onclick="closeDrawer()">TOP</a>
                 </li>
                 <li class="nav_item">
                     <a href="#scroll-works" onclick="closeDrawer()">WORKS</a>
@@ -42,7 +42,6 @@
     <div id="hero">
         <div class="hero-text">
             <h1>UMEMURA AKITO</h1>
-            <p>PORTFOLIO</p>
             <h2>制作実績</h2>
         </div>
         <div id="scroll-works"></div>
@@ -51,11 +50,15 @@
         <h1>WORKS</h1>
         <div class="works-container">
             <div class="items-container">
-                <div id="beer-box"><img id="beer-image" class="works-image" src="image/beer.jpeg" alt=""></div>
-                <p id="works-text-top">この作品についての説明が入ります<br>書くことないかも</p>
+                <div id="beer-box">
+                    <img id="beer-image" class="works-image" src="image/beer.jpeg" alt="">
+                </div>
+                <p id="works-text-top"><br><br>ビール瓶のデッサンをしました<br><br>デッサンとモデリング授業内で作成<br></p>
             </div>
+
             <div id="form-container" class="items-container">
-                <p class="works-text">この作品についての説明が入ります<br>書くことないかも</p>
+                <p class="works-text"><br><br>お問合わせフォームを作成しました<br><br>Webデザイン及び演習授業内で作成<br><br><br><br>使用
+                    ： html, CSS</p>
                 <img id="form-image" class="works-image" src="image/form.png" alt="">
             </div>
             <div class="items-container">
@@ -70,10 +73,10 @@
                         </video>
                     </div>
                 </div>
-                <p class="works-text">この作品について</p>
+                <p class="works-text"><br>動く電気スタンドの<br>アニメーションを<br>制作しました<br><br>マルチメディア情報処理及び演習<br>授業内で作成<br><br><br>使用 : Maya<br><br><br>&lt;&lt;クリックで再生</p>
             </div>
             <div id="video4" class="items-container">
-                <p class="works-text">この作品について</p>
+                <p class="works-text"><br>ロボットの手の<br>アニメーションを<br>制作しました<br><br>マルチメディア情報処理及び演習<br>授業内で作成<br><br><br>使用 : Maya<br><br><br>クリックで再生&gt;&gt;</p>
                 <div id="video-container-body2">
                     <div class="video-container">
                         <img id="robot-image" src="image/gallery3.jpeg" alt="動画のサムネイル" class="thumbnail2" data-video="image/movie2.mov">
@@ -91,13 +94,19 @@
     </div>
     <div id="profile">
         <h1>PROFILE</h1>
-        <p>ここには自分のプロフィールを入れます<br>書くこと候補<br>名前、所属大学、</p>
+        <div id="profile-container">
+            <img src="image/icon.jpeg">
+            <div>
+                <p class="prof"><br>名前 : ウメムラ アキト<br><br>出身 : 愛知県名古屋市<br><br>所属 : 愛知工業大学<br><br><br>配色にこだわったデザインが<br>できるデザイナーになりたいです</p>
+                <p class="prof-link"><br><br>GitHub : <a href="https://github.com/UmePrime">https://github.com/UmePrime</a></p>
+            </div>
+        </div>
     </div>
     <div class="scroll-top">
         
     </div>
     <footer>
-        <p>©UMEMURA PORTFOLIO</p>
+        <p>©UMEMURA AKITO</p>
     </footer>
 </body>
 </html>
